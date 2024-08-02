@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main-content">
+    <h1>Project Testing</h1>
+    <p>Press the Escape key to open the settings menu.</p>
+  </div>
+
+  <div id="settings-menu" class="hidden">
+    <h2>Settings Menu</h2>
+
+    <!-- Upload Button -->
+    <div class="settings-option">
+      <label for="upload-file">Upload a file:</label>
+      <input type="file" id="upload-file">
+    </div>
+
+    <!-- Example Checkbox Option -->
+    <div class="settings-option">
+      <label for="dark-mode">Dark Mode</label>
+      <input type="checkbox" id="dark-mode">
+    </div>
+
+    <!-- Example Dropdown Option -->
+    <div class="settings-option">
+      <label for="language-select">Select Language:</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <!-- Add more languages as needed -->
+      </select>
+    </div>
+    <!-- Volume Slider -->
+    <div class="settings-option">
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+    </div>
+    
+    <!-- Close Button -->
+    <button id="close-settings">Close</button>
+    <!-- Image -->
+    <div id="settings-image-container">
+      <img src="images/signature.png" alt="Signature">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

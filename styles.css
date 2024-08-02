@@ -1,0 +1,78 @@
+/* styles.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#main-content {
+  padding: 20px;
+  color: rgb(48, 48, 48); /* text color */
+}
+
+#settings-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: none;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#settings-menu.hidden {
+  display: none;
+}
+
+#settings-menu.visible {
+  display: block;
+}
+
+.settings-option {
+  margin-bottom: 20px;
+}
+
+.settings-option label {
+  display: block;
+  margin-bottom: 5px;
+}
+#volume {
+  width: 100%;
+}
+
+#close-settings {
+  background-color: #000057;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#close-settings:hover {
+  background-color: #000033;
+}
+#settings-image-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#settings-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+body.dark-mode {
+  background-color: #333; /* Dark background */
+  color: #fff; /* White text */
+}
+
+body.dark-mode #main-content {
+  color: inherit; /* Inherit the body text color */
+}
